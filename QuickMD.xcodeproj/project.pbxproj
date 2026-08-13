@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006913F81C1503CD10E46262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27712F1934EC931BCB03A4C0 /* ContentView.swift */; };
+		02E929CF0677F48DDDAAB32D /* MarkdownBlockParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE506B050168DCD2215FF4BD /* MarkdownBlockParser.swift */; };
+		07A76CB8B435E80C529B5E21 /* HTMLEscaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C897A1FDF94739B1B2398A /* HTMLEscaper.swift */; };
+		1288ECA6B5AA40318A23DBDA /* PreviewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BCB9D815FACE7F0AC31E4 /* PreviewError.swift */; };
+		2F5789474ACEE534EEB13EB5 /* libMarkdownCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0557B7D9550465BA4F81EB5 /* libMarkdownCore.a */; };
+		32DD1058E4F4B3F03D2FDCFD /* libMarkdownCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0557B7D9550465BA4F81EB5 /* libMarkdownCore.a */; };
+		3EF1E5E9E46C7576B4FFFBCB /* MarkdownDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72AE1A9EC23383390EFBC78 /* MarkdownDocument.swift */; };
+		483B7A8EBBE7870DA291715D /* HTMLDocumentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC81E700DA3F0C33AC2861 /* HTMLDocumentBuilder.swift */; };
+		6A03B08DC47CA400B7FF9F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59565D71C64BE6AFF7A4496D /* Assets.xcassets */; };
+		7C5AA4883120475F5F24D6B7 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAAD06786C01F01A038696E /* PreviewProvider.swift */; };
+		811993ED3E8DF8F5150E6E34 /* MarkdownRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5942FCA2002CCEE9B8664CA /* MarkdownRendererTests.swift */; };
+		8A634312B1F42DC6C9BD5DF0 /* MarkdownPreviewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 972352C703EC9DD59345C901 /* MarkdownPreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		965955EFC9ED78655B2C7217 /* InlineMarkdownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123509DCB90AC6BE077C6BD5 /* InlineMarkdownParser.swift */; };
+		9A8547BF568AD58ACE52BF1C /* InstructionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D535D940A764F205241E2B6F /* InstructionRow.swift */; };
+		ABBB79DCB8D6B4EC3C1F4DCA /* MarkdownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F1367A2E2F2A7B758E6BF2 /* MarkdownRenderer.swift */; };
+		BABBB52500170173C69E2117 /* QuickMDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4BF87472AE47C9D0C2691 /* QuickMDApp.swift */; };
+		E15A3B073A9728025BFFD2FA /* MarkdownResourceResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFD6BC98332B3FC60D480C /* MarkdownResourceResolver.swift */; };
+		F0026D3CAA84E7B5B6D24CB9 /* TableAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91A947AF0DA36884ABFA1EF /* TableAlignment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B5882F370CE23E662F46721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19CEE9C48B96332ECE40FB33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC51DD918B8041E65706D19;
+			remoteInfo = MarkdownPreviewExtension;
+		};
+		5175BCC110A4CDDD7538A331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19CEE9C48B96332ECE40FB33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEC4C46991849A25AC4AB045;
+			remoteInfo = MarkdownCore;
+		};
+		80514774027ECA9071009826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19CEE9C48B96332ECE40FB33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEC4C46991849A25AC4AB045;
+			remoteInfo = MarkdownCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DB1268FC3444897FB7C2AAA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A634312B1F42DC6C9BD5DF0 /* MarkdownPreviewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		123509DCB90AC6BE077C6BD5 /* InlineMarkdownParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineMarkdownParser.swift; sourceTree = "<group>"; };
+		22C47068F5C7FDDB54F270B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		27712F1934EC931BCB03A4C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3CAAD06786C01F01A038696E /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		3D0D58E6207056F0C449E1BC /* QuickMD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickMD.entitlements; sourceTree = "<group>"; };
+		43D4BF87472AE47C9D0C2691 /* QuickMDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMDApp.swift; sourceTree = "<group>"; };
+		4E0A873502D7A4B967E9DC89 /* MarkdownPreviewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkdownPreviewExtension.entitlements; sourceTree = "<group>"; };
+		583BCB9D815FACE7F0AC31E4 /* PreviewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewError.swift; sourceTree = "<group>"; };
+		59565D71C64BE6AFF7A4496D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		972352C703EC9DD59345C901 /* MarkdownPreviewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MarkdownPreviewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		976C01DF6C29DADC1352E667 /* QuickMDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickMDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF1942F6A139A4E7899A582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A0AC81E700DA3F0C33AC2861 /* HTMLDocumentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLDocumentBuilder.swift; sourceTree = "<group>"; };
+		A5C897A1FDF94739B1B2398A /* HTMLEscaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEscaper.swift; sourceTree = "<group>"; };
+		AE506B050168DCD2215FF4BD /* MarkdownBlockParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownBlockParser.swift; sourceTree = "<group>"; };
+		D0557B7D9550465BA4F81EB5 /* libMarkdownCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMarkdownCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D535D940A764F205241E2B6F /* InstructionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionRow.swift; sourceTree = "<group>"; };
+		D72AE1A9EC23383390EFBC78 /* MarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownDocument.swift; sourceTree = "<group>"; };
+		D7F1367A2E2F2A7B758E6BF2 /* MarkdownRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderer.swift; sourceTree = "<group>"; };
+		EDEFD6BC98332B3FC60D480C /* MarkdownResourceResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownResourceResolver.swift; sourceTree = "<group>"; };
+		F5942FCA2002CCEE9B8664CA /* MarkdownRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRendererTests.swift; sourceTree = "<group>"; };
+		F6957FBDBB907A4B5289BB63 /* QuickMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91A947AF0DA36884ABFA1EF /* TableAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAlignment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6124399CCAAB9379347481CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DD1058E4F4B3F03D2FDCFD /* libMarkdownCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC15B65956447F1DF30BE965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5789474ACEE534EEB13EB5 /* libMarkdownCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26C752D196C993D930780EF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0557B7D9550465BA4F81EB5 /* libMarkdownCore.a */,
+				972352C703EC9DD59345C901 /* MarkdownPreviewExtension.appex */,
+				F6957FBDBB907A4B5289BB63 /* QuickMD.app */,
+				976C01DF6C29DADC1352E667 /* QuickMDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70AA3847F2F42C36E2C782DF = {
+			isa = PBXGroup;
+			children = (
+				C67FF050BD3FE3D6DFE894D1 /* MarkdownCore */,
+				75171C40927432B7217207AB /* MarkdownPreviewExtension */,
+				85DE4F9726BF79F5B9B499DE /* QuickMD */,
+				EF483293F25D348179D3768C /* Tests */,
+				26C752D196C993D930780EF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75171C40927432B7217207AB /* MarkdownPreviewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9DF1942F6A139A4E7899A582 /* Info.plist */,
+				4E0A873502D7A4B967E9DC89 /* MarkdownPreviewExtension.entitlements */,
+				583BCB9D815FACE7F0AC31E4 /* PreviewError.swift */,
+				3CAAD06786C01F01A038696E /* PreviewProvider.swift */,
+			);
+			path = MarkdownPreviewExtension;
+			sourceTree = "<group>";
+		};
+		85DE4F9726BF79F5B9B499DE /* QuickMD */ = {
+			isa = PBXGroup;
+			children = (
+				59565D71C64BE6AFF7A4496D /* Assets.xcassets */,
+				27712F1934EC931BCB03A4C0 /* ContentView.swift */,
+				22C47068F5C7FDDB54F270B9 /* Info.plist */,
+				D535D940A764F205241E2B6F /* InstructionRow.swift */,
+				3D0D58E6207056F0C449E1BC /* QuickMD.entitlements */,
+				43D4BF87472AE47C9D0C2691 /* QuickMDApp.swift */,
+			);
+			path = QuickMD;
+			sourceTree = "<group>";
+		};
+		C67FF050BD3FE3D6DFE894D1 /* MarkdownCore */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC81E700DA3F0C33AC2861 /* HTMLDocumentBuilder.swift */,
+				A5C897A1FDF94739B1B2398A /* HTMLEscaper.swift */,
+				123509DCB90AC6BE077C6BD5 /* InlineMarkdownParser.swift */,
+				AE506B050168DCD2215FF4BD /* MarkdownBlockParser.swift */,
+				D72AE1A9EC23383390EFBC78 /* MarkdownDocument.swift */,
+				D7F1367A2E2F2A7B758E6BF2 /* MarkdownRenderer.swift */,
+				EDEFD6BC98332B3FC60D480C /* MarkdownResourceResolver.swift */,
+				F91A947AF0DA36884ABFA1EF /* TableAlignment.swift */,
+			);
+			path = MarkdownCore;
+			sourceTree = "<group>";
+		};
+		EF483293F25D348179D3768C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5942FCA2002CCEE9B8664CA /* MarkdownRendererTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1708C6CC629583E8D0CFBDC7 /* QuickMD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7AF163B3A0507C5EED2E147 /* Build configuration list for PBXNativeTarget "QuickMD" */;
+			buildPhases = (
+				7A36ABEDD32B5450967A405A /* Sources */,
+				A7A5E663C40C809BF44A2638 /* Resources */,
+				3DB1268FC3444897FB7C2AAA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25D64391686C73D591DF8B6E /* PBXTargetDependency */,
+			);
+			name = QuickMD;
+			packageProductDependencies = (
+			);
+			productName = QuickMD;
+			productReference = F6957FBDBB907A4B5289BB63 /* QuickMD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFC51DD918B8041E65706D19 /* MarkdownPreviewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1FE140CDCBCBF2CE8BC0F9D /* Build configuration list for PBXNativeTarget "MarkdownPreviewExtension" */;
+			buildPhases = (
+				3F1FC6B52D25004CEB20710B /* Sources */,
+				BC15B65956447F1DF30BE965 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9B15EB9E76C2E4CE55E2DD7 /* PBXTargetDependency */,
+			);
+			name = MarkdownPreviewExtension;
+			packageProductDependencies = (
+			);
+			productName = MarkdownPreviewExtension;
+			productReference = 972352C703EC9DD59345C901 /* MarkdownPreviewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E8DCBC3C0620124395853FBC /* QuickMDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C49CC6A5425D8F623CC7F7 /* Build configuration list for PBXNativeTarget "QuickMDTests" */;
+			buildPhases = (
+				3B6B15DBD315F71B63D778F7 /* Sources */,
+				6124399CCAAB9379347481CE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD282DBFCCB6AD41DE541037 /* PBXTargetDependency */,
+			);
+			name = QuickMDTests;
+			packageProductDependencies = (
+			);
+			productName = QuickMDTests;
+			productReference = 976C01DF6C29DADC1352E667 /* QuickMDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEC4C46991849A25AC4AB045 /* MarkdownCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 254B4FD0A9527D0D0E674C55 /* Build configuration list for PBXNativeTarget "MarkdownCore" */;
+			buildPhases = (
+				7B9ACC8E6E0D96EAC8B20757 /* Sources */,
+				3F56943193F87FC5B0A38290 /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkdownCore;
+			packageProductDependencies = (
+			);
+			productName = MarkdownCore;
+			productReference = D0557B7D9550465BA4F81EB5 /* libMarkdownCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19CEE9C48B96332ECE40FB33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1708C6CC629583E8D0CFBDC7 = {
+						ProvisioningStyle = Manual;
+					};
+					BFC51DD918B8041E65706D19 = {
+						ProvisioningStyle = Manual;
+					};
+					E8DCBC3C0620124395853FBC = {
+						ProvisioningStyle = Manual;
+					};
+					EEC4C46991849A25AC4AB045 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 9B3CD972D6598BC161ECED1A /* Build configuration list for PBXProject "QuickMD" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 70AA3847F2F42C36E2C782DF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 26C752D196C993D930780EF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEC4C46991849A25AC4AB045 /* MarkdownCore */,
+				BFC51DD918B8041E65706D19 /* MarkdownPreviewExtension */,
+				1708C6CC629583E8D0CFBDC7 /* QuickMD */,
+				E8DCBC3C0620124395853FBC /* QuickMDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7A5E663C40C809BF44A2638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A03B08DC47CA400B7FF9F64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F56943193F87FC5B0A38290 /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B6B15DBD315F71B63D778F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811993ED3E8DF8F5150E6E34 /* MarkdownRendererTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1FC6B52D25004CEB20710B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1288ECA6B5AA40318A23DBDA /* PreviewError.swift in Sources */,
+				7C5AA4883120475F5F24D6B7 /* PreviewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A36ABEDD32B5450967A405A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006913F81C1503CD10E46262 /* ContentView.swift in Sources */,
+				9A8547BF568AD58ACE52BF1C /* InstructionRow.swift in Sources */,
+				BABBB52500170173C69E2117 /* QuickMDApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9ACC8E6E0D96EAC8B20757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				483B7A8EBBE7870DA291715D /* HTMLDocumentBuilder.swift in Sources */,
+				07A76CB8B435E80C529B5E21 /* HTMLEscaper.swift in Sources */,
+				965955EFC9ED78655B2C7217 /* InlineMarkdownParser.swift in Sources */,
+				02E929CF0677F48DDDAAB32D /* MarkdownBlockParser.swift in Sources */,
+				3EF1E5E9E46C7576B4FFFBCB /* MarkdownDocument.swift in Sources */,
+				ABBB79DCB8D6B4EC3C1F4DCA /* MarkdownRenderer.swift in Sources */,
+				E15A3B073A9728025BFFD2FA /* MarkdownResourceResolver.swift in Sources */,
+				F0026D3CAA84E7B5B6D24CB9 /* TableAlignment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25D64391686C73D591DF8B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC51DD918B8041E65706D19 /* MarkdownPreviewExtension */;
+			targetProxy = 2B5882F370CE23E662F46721 /* PBXContainerItemProxy */;
+		};
+		A9B15EB9E76C2E4CE55E2DD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEC4C46991849A25AC4AB045 /* MarkdownCore */;
+			targetProxy = 5175BCC110A4CDDD7538A331 /* PBXContainerItemProxy */;
+		};
+		CD282DBFCCB6AD41DE541037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEC4C46991849A25AC4AB045 /* MarkdownCore */;
+			targetProxy = 80514774027ECA9071009826 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		255E09E4B46EF51CA916F501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bunn.quickmd.tests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2FD8136BF9EC4618D802903B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bunn.quickmd.tests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		46DE4D06EA87D77571AFF009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MarkdownPreviewExtension/MarkdownPreviewExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MarkdownPreviewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bunn.quickmd.preview;
+				PRODUCT_NAME = "Markdown Preview";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		75F20D15924A7A0E1B288382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickMD/QuickMD.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuickMD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bunn.quickmd;
+				PRODUCT_NAME = QuickMD;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		85279905A0D268ED3421BE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.bunn.quickmd.markdown-core";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A1CE51FF0CC8C6D41B7FA175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickMD/QuickMD.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuickMD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bunn.quickmd;
+				PRODUCT_NAME = QuickMD;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BD44DE57E1F579F308A06DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		BFF4414370F8D8F68B8E8CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.bunn.quickmd.markdown-core";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CC400D9D4D3DDC8FEFBA071A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		E4F8AA954653DC0FD29936D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MarkdownPreviewExtension/MarkdownPreviewExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MarkdownPreviewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bunn.quickmd.preview;
+				PRODUCT_NAME = "Markdown Preview";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21C49CC6A5425D8F623CC7F7 /* Build configuration list for PBXNativeTarget "QuickMDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD8136BF9EC4618D802903B /* Debug */,
+				255E09E4B46EF51CA916F501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		254B4FD0A9527D0D0E674C55 /* Build configuration list for PBXNativeTarget "MarkdownCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF4414370F8D8F68B8E8CDE /* Debug */,
+				85279905A0D268ED3421BE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9B3CD972D6598BC161ECED1A /* Build configuration list for PBXProject "QuickMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD44DE57E1F579F308A06DF1 /* Debug */,
+				CC400D9D4D3DDC8FEFBA071A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B7AF163B3A0507C5EED2E147 /* Build configuration list for PBXNativeTarget "QuickMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F20D15924A7A0E1B288382 /* Debug */,
+				A1CE51FF0CC8C6D41B7FA175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C1FE140CDCBCBF2CE8BC0F9D /* Build configuration list for PBXNativeTarget "MarkdownPreviewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DE4D06EA87D77571AFF009 /* Debug */,
+				E4F8AA954653DC0FD29936D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19CEE9C48B96332ECE40FB33 /* Project object */;
+}
